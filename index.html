@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Problem-Fixed</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Chart.js for Visitor Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- First Row: Logo -->
+        <div class="row justify-content-center align-items-center py-3">
+            <div class="col-12 text-center logo">
+                <a href="index.html"><img src="img/logo.png" alt="Tech-Problem-Fixed">Tech-Problem-Fixed</a>
+            </div>
+        </div>
+<!-- Hero Section -->
+<div class="container-fluid">
+  <!-- Single Row: Search Bar, Filter Dropdown, Dark/Light Switch -->
+  <div class="row justify-content-between align-items-center py-3 mx-4">
+      <!-- <div class="col-4 mx-auto searchbar">
+          <div class="position-relative">
+              <form id="searchForm" class="search-form">
+                  <input type="text" id="search-bar" class="form-control" placeholder="Search posts..." autocomplete="on">
+                  <div id="search-suggestions" class="list-group position-absolute w-100" style="z-index: 1000; display: none;"></div>
+              </form>
+          </div>
+      </div> -->
+      <div class="col-8 dropdown-container d-flex">
+          <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  Show All Posts
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+                  <li><a class="dropdown-item filter-option" href="#" data-filter="all">Show All Posts</a></li>
+                  <li><a class="dropdown-item filter-option" href="#" data-filter="android-posts">Android Tips And Problem Fix</a></li>
+                  <li><a class="dropdown-item filter-option" href="#" data-filter="ethical-hacking-posts">Start Ethical Hacking on Android</a></li>
+                  <li><a class="dropdown-item filter-option" href="#" data-filter="earning-tricks-tips-posts">Latest Tricks Earning Tips Using Tech</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="col-4 me-0 dark-icon">
+          <button type="button" class="btn btn-light" id="themeToggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+      </div>
+  </div>
+</div>
+  
+</div>
+    <!-- Navbar Links -->
+    <div class="row justify-content-center">
+        <div class="navbar col-12 text-center">
+            <ul class="d-flex justify-content-center">
+                <li class="mx-3 active" style="--i: #ff55b2; --j: rgb(111, 12, 90);">
+                    <span class="icon">
+                        <i class="fa-solid fa-house-chimney"></i></span>
+                    <span class="text"><a href="index.html">Home</a></span>
+                </li>
+                <li class="mx-3" style="--i: #ff55b2; --j: rgb(111, 12, 90);">
+                    <span class="icon">
+                        <i class="fa-solid fa-person"></i></span>
+                    <span class="text"><a href="about.html">About</a></span>
+                </li>
+                <li class="mx-3" style="--i: #ff55b2; --j: rgb(111, 12, 90);">
+                    <span class="icon">
+                        <i class="fa-brands fa-rocketchat"></i></span>
+                    <span class="text"><a href="contact.html">Contact</a></span>
+                </li>
+            </ul>
+        </div>
+        <hr class="navbar-hr">
+    </div>
+     <!-- Hero Section with Search Bar -->
+     <div class="container my-5 text-center">
+      <h1>Welcome to Tech Problem Solving</h1>
+      <p>Explore Android tips, ethical hacking tutorials, and earning tricks!</p>
+  </div>
+
+  <!-- Posts Title -->
+  <div class="container">
+      <h1 class="text-center my-4">All Kind Tutorials Learnings Fixing Problems Tech Info Ethical Hacking You May Learn Easily On Our Platform <br/>(2025 Step-by-Step Guide)</h1>
+  </div>
+
+  <!-- Visitor Counter and Chart (Placeholder) -->
+  <!-- <div class="container">
+      <div id="visitor-count" class="text-center my-3">Total Visitors: <span id="total">0</span></div>
+      <canvas id="visitorChart" width="400" height="200" class="mb-4"></canvas>
+  </div> -->
+
+  <!-- Post Section -->
+  <div class="container post-section">
+      <div class="row">
+          <!-- Post 1: Android Speed Up -->
+          <div class="col-md-4 mb-4 post-card" data-category="android-posts">
+              <div class="post card">
+                  <img src="img/android-speed.jpg" alt="Android Speed Up" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 10, 2025</p>
+                      <h5 class="post-title card-title">How to Speed Up Your Android Phone</h5>
+                      <p class="post-description card-text">Is your Android phone slow? Follow these easy steps to make it faster in minutes!</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post1-content" aria-expanded="false" aria-controls="post1-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="How to Speed Up Your Android Phone">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post1-content">
+                          <div class="card card-body">
+                              <h5>How to Speed Up Your Android Phone</h5>
+                              <p>Your Android phone can slow down over time due to apps, storage issues, or old software. Here’s a simple guide to speed it up.</p>
+                              <h6>Step 1: Clear Storage Space</h6>
+                              <ul>
+                                  <li>Go to <strong>Settings > Storage</strong>.</li>
+                                  <li>Check how much space is used.</li>
+                                  <li>Delete old photos, videos, or apps you don’t use.</li>
+                                  <li>Use the “Free Up Space” option to remove junk files.</li>
+                              </ul>
+                              <h6>Step 2: Disable or Uninstall Bloatware</h6>
+                              <ul>
+                                  <li>Go to <strong>Settings > Apps</strong>.</li>
+                                  <li>Find apps you don’t use (like carrier or system apps).</li>
+                                  <li>Select <strong>Disable</strong> or <strong>Uninstall</strong> if possible.</li>
+                              </ul>
+                              <h6>Step 3: Update Your Apps and System</h6>
+                              <ul>
+                                  <li>Open <strong>Google Play Store</strong> and update all apps.</li>
+                                  <li>Go to <strong>Settings > System > System Update</strong> to check for Android updates.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Do these steps every few months to keep your phone fast!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 2: Termux Intro -->
+          <div class="col-md-4 mb-4 post-card" data-category="android-posts">
+              <div class="post card">
+                  <img src="img/termux-intro.jpg" alt="Termux Intro" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 12, 2025</p>
+                      <h5 class="post-title card-title">Introduction to Termux: Turn Your Android into a Linux Terminal</h5>
+                      <p class="post-description card-text">Learn how to use Termux to run Linux commands on your Android phone.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post2-content" aria-expanded="false" aria-controls="post2-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Introduction to Termux: Turn Your Android into a Linux Terminal">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post2-content">
+                          <div class="card card-body">
+                              <h5>Introduction to Termux: Turn Your Android into a Linux Terminal</h5>
+                              <p>Termux is a powerful app that turns your Android phone into a Linux terminal. You can run commands, install tools, and even code on your phone. This guide will help you get started with Termux in simple steps.</p>
+                              <h6>Step 1: Install Termux</h6>
+                              <ul>
+                                  <li>Go to the <strong>Google Play Store</strong> or <strong>F-Droid</strong>.</li>
+                                  <li>Search for <strong>Termux</strong> and install it.</li>
+                                  <li>Open Termux and grant storage permissions when asked.</li>
+                              </ul>
+                              <h6>Step 2: Update Termux</h6>
+                              <ul>
+                                  <li>In Termux, type <code>pkg update && pkg upgrade</code> and press Enter.</li>
+                                  <li>Wait for the update to finish. This keeps Termux up-to-date.</li>
+                                  <li>If asked to confirm, type <code>y</code> and press Enter.</li>
+                              </ul>
+                              <h6>Step 3: Learn Basic Commands</h6>
+                              <ul>
+                                  <li><code>ls</code>: Lists files and folders in the current directory.</li>
+                                  <li><code>cd directory_name</code>: Changes to a different folder.</li>
+                                  <li><code>mkdir folder_name</code>: Creates a new folder.</li>
+                                  <li><code>clear</code>: Clears the screen.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Join Termux communities on Telegram or Reddit to learn more tricks!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 3: Ethical Hacking Basics -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/ethical-hacking.jpg" alt="Ethical Hacking" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 14, 2025</p>
+                      <h5 class="post-title card-title">Ethical Hacking Basics: What You Need to Know</h5>
+                      <p class="post-description card-text">Start your journey in ethical hacking with this beginner-friendly guide.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post3-content" aria-expanded="false" aria-controls="post3-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Ethical Hacking Basics: What You Need to Know">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post3-content">
+                          <div class="card card-body">
+                              <h5>Ethical Hacking Basics: What You Need to Know</h5>
+                              <p>Ethical hacking involves testing systems for vulnerabilities to improve security. This guide introduces the basics for beginners.</p>
+                              <h6>Step 1: Understand Ethical Hacking</h6>
+                              <ul>
+                                  <li>Ethical hackers find and fix security flaws with permission.</li>
+                                  <li>Learn key terms like penetration testing, vulnerability scanning, and exploits.</li>
+                              </ul>
+                              <h6>Step 2: Learn Basic Tools</h6>
+                              <ul>
+                                  <li>Install <strong>Kali Linux</strong> or use Termux on Android.</li>
+                                  <li>Try tools like <strong>Nmap</strong> for network scanning.</li>
+                                  <li>Use <strong>Metasploit</strong> for testing vulnerabilities.</li>
+                              </ul>
+                              <h6>Step 3: Practice Safely</h6>
+                              <ul>
+                                  <li>Set up a virtual lab with tools like VirtualBox.</li>
+                                  <li>Use platforms like <strong>Hack The Box</strong> or <strong>TryHackMe</strong>.</li>
+                                  <li>Never test systems without permission.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Get certified (e.g., CEH) to boost your ethical hacking career!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 4: Install Nmap in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/nmap-termux.jpg" alt="Nmap Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 16, 2025</p>
+                      <h5 class="post-title card-title">Install Nmap in Termux for Network Scanning</h5>
+                      <p class="post-description card-text">Learn how to install and use Nmap in Termux to scan networks for pentesting.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post4-content" aria-expanded="false" aria-controls="post4-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Install Nmap in Termux for Network Scanning">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post4-content">
+                          <div class="card card-body">
+                              <h5>Install Nmap in Termux for Network Scanning</h5>
+                              <p>Nmap is a powerful tool for scanning networks to find devices and open ports. This guide shows you how to set it up in Termux for pentesting.</p>
+                              <h6>Step 1: Update Termux</h6>
+                              <ul>
+                                  <li>Open Termux and type <code>pkg update && pkg upgrade</code>.</li>
+                                  <li>Press Enter and type <code>y</code> if prompted.</li>
+                              </ul>
+                              <h6>Step 2: Install Nmap</h6>
+                              <ul>
+                                  <li>Type <code>pkg install nmap</code> and press Enter.</li>
+                                  <li>Wait for the installation to complete.</li>
+                              </ul>
+                              <h6>Step 3: Scan a Network</h6>
+                              <ul>
+                                  <li>Type <code>nmap 192.168.1.0/24</code> to scan a local network.</li>
+                                  <li>Review the list of devices and open ports.</li>
+                                  <li>Use <code>nmap -sV 192.168.1.100</code> for detailed service scanning on a specific IP.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Always get permission before scanning networks, as unauthorized scanning is illegal!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 5: Install Metasploit in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/metasploit-termux.jpg" alt="Metasploit Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 17, 2025</p>
+                      <h5 class="post-title card-title">Set Up Metasploit in Termux for Pentesting</h5>
+                      <p class="post-description card-text">Install Metasploit in Termux to test vulnerabilities and practice pentesting on Android.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post5-content" aria-expanded="false" aria-controls="post5-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Set Up Metasploit in Termux for Pentesting">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post5-content">
+                          <div class="card card-body">
+                              <h5>Set Up Metasploit in Termux for Pentesting</h5>
+                              <p>Metasploit is a pentesting framework for finding and exploiting vulnerabilities. This guide helps you install it in Termux.</p>
+                              <h6>Step 1: Install Dependencies</h6>
+                              <ul>
+                                  <li>Type <code>pkg install wget curl</code> to install required tools.</li>
+                                  <li>Update Termux with <code>pkg update && pkg upgrade</code>.</li>
+                              </ul>
+                              <h6>Step 2: Download Metasploit</h6>
+                              <ul>
+                                  <li>Type <code>wget https://raw.githubusercontent.com/rapid7/metasploit-framework/master/msfconsole</code>.</li>
+                                  <li>Install the framework with <code>pkg install metasploit</code> (if available) or follow official Termux guides.</li>
+                              </ul>
+                              <h6>Step 3: Run Metasploit</h6>
+                              <ul>
+                                  <li>Type <code>msfconsole</code> to start Metasploit.</li>
+                                  <li>Use commands like <code>search exploit</code> to find exploits.</li>
+                                  <li>Practice on a legal test environment (e.g., Metasploitable).</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Use platforms like TryHackMe to practice Metasploit safely!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 6: Install Burp Suite in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/burp-suite.jpg" alt="Burp Suite Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 18, 2025</p>
+                      <h5 class="post-title card-title">Setting Up Burp Suite in Termux for Web Pentesting</h5>
+                      <p class="post-description card-text">Learn how to install Burp Suite in Termux for intercepting and testing web applications.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post6-content" aria-expanded="false" aria-controls="post6-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Setting Up Burp Suite in Termux for Web Pentesting">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post6-content">
+                          <div class="card card-body">
+                              <h5>Setting Up Burp Suite in Termux for Web Pentesting</h5>
+                              <p>Burp Suite is a tool for testing web application security. This guide shows you how to set it up in Termux.</p>
+                              <h6>Step 1: Install Java</h6>
+                              <ul>
+                                  <li>Type <code>pkg install openjdk-17</code> to install Java.</li>
+                                  <li>Verify with <code>java -version</code>.</li>
+                              </ul>
+                              <h6>Step 2: Download Burp Suite</h6>
+                              <ul>
+                                  <li>Visit the official PortSwigger website and download the Burp Suite Community Edition JAR file.</li>
+                                  <li>Use <code>wget</code> to download it to Termux or transfer it manually.</li>
+                              </ul>
+                              <h6>Step 3: Run Burp Suite</h6>
+                              <ul>
+                                  <li>Type <code>java -jar burpsuite_community.jar</code> to start Burp Suite.</li>
+                                  <li>Configure your browser to use Burp as a proxy (e.g., 127.0.0.1:8080).</li>
+                                  <li>Test on legal targets like DVWA.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Get a Burp Suite Professional license for advanced features!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 7: Install SQLMap in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/sqlmap-termux.jpg" alt="SQLMap Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 19, 2025</p>
+                      <h5 class="post-title card-title">Using SQLMap in Termux for SQL Injection Testing</h5>
+                      <p class="post-description card-text">Set up SQLMap in Termux to test websites for SQL injection vulnerabilities.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post7-content" aria-expanded="false" aria-controls="post7-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Using SQLMap in Termux for SQL Injection Testing">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post7-content">
+                          <div class="card card-body">
+                              <h5>Using SQLMap in Termux for SQL Injection Testing</h5>
+                              <p>SQLMap automates SQL injection testing. This guide shows you how to install and use it in Termux.</p>
+                              <h6>Step 1: Install Git</h6>
+                              <ul>
+                                  <li>Type <code>pkg install git</code> and press Enter.</li>
+                              </ul>
+                              <h6>Step 2: Clone SQLMap</h6>
+                              <ul>
+                                  <li>Type <code>git clone https://github.com/sqlmapproject/sqlmap.git</code>.</li>
+                                  <li>Navigate to the directory: <code>cd sqlmap</code>.</li>
+                              </ul>
+                              <h6>Step 3: Run SQLMap</h6>
+                              <ul>
+                                  <li>Type <code>python sqlmap.py -u "http://example.com/?id=1"</code> to test a URL.</li>
+                                  <li>Follow prompts to enumerate databases or tables.</li>
+                                  <li>Test only on authorized targets like DVWA.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Use <code>--dbs</code> or <code>--tables</code> to extract database details safely!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 8: Install Nikto in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/nikto-termux.jpg" alt="Nikto Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 20, 2025</p>
+                      <h5 class="post-title card-title">Install Nikto in Termux for Web Server Scanning</h5>
+                      <p class="post-description card-text">Use Nikto in Termux to scan web servers for vulnerabilities and misconfigurations.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post8-content" aria-expanded="false" aria-controls="post8-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Install Nikto in Termux for Web Server Scanning">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post8-content">
+                          <div class="card card-body">
+                              <h5>Install Nikto in Termux for Web Server Scanning</h5>
+                              <p>Nikto is a web server scanner that identifies vulnerabilities. This guide helps you set it up in Termux.</p>
+                              <h6>Step 1: Install Perl</h6>
+                              <ul>
+                                  <li>Type <code>pkg install perl</code> and press Enter.</li>
+                              </ul>
+                              <h6>Step 2: Install Nikto</h6>
+                              <ul>
+                                  <li>Type <code>pkg install nikto</code> or clone from GitHub: <code>git clone https://github.com/sullo/nikto.git</code>.</li>
+                                  <li>Navigate to the directory: <code>cd nikto/program</code>.</li>
+                              </ul>
+                              <h6>Step 3: Run Nikto</h6>
+                              <ul>
+                                  <li>Type <code>perl nikto.pl -h http://example.com</code> to scan a website.</li>
+                                  <li>Review the report for vulnerabilities.</li>
+                                  <li>Test only on authorized servers.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Combine Nikto with Burp Suite for deeper web testing!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 9: Set Up SSH in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/ssh-termux.jpg" alt="SSH Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 21, 2025</p>
+                      <h5 class="post-title card-title">Configure SSH in Termux for Secure Remote Access</h5>
+                      <p class="post-description card-text">Set up SSH in Termux to securely connect to remote servers for pentesting.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post9-content" aria-expanded="false" aria-controls="post9-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Configure SSH in Termux for Secure Remote Access">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post9-content">
+                          <div class="card card-body">
+                              <h5>Configure SSH in Termux for Secure Remote Access</h5>
+                              <p>SSH allows secure remote access to servers. This guide shows you how to set it up in Termux.</p>
+                              <h6>Step 1: Install OpenSSH</h6>
+                              <ul>
+                                  <li>Type <code>pkg install openssh</code> and press Enter.</li>
+                              </ul>
+                              <h6>Step 2: Generate SSH Keys</h6>
+                              <ul>
+                                  <li>Type <code>ssh-keygen</code> and press Enter to create a key pair.</li>
+                                  <li>Save the key in the default location (~/.ssh/id_rsa).</li>
+                              </ul>
+                              <h6>Step 3: Connect to a Server</h6>
+                              <ul>
+                                  <li>Type <code>ssh user@server_ip</code> (replace with your server details).</li>
+                                  <li>Enter your password or configure key-based authentication.</li>
+                                  <li>Use for managing pentesting servers securely.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Use <code>scp</code> to transfer files securely with SSH!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 10: Install Hydra in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/hydra-termux.jpg" alt="Hydra Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 22, 2025</p>
+                      <h5 class="post-title card-title">Install Hydra in Termux for Password Cracking</h5>
+                      <p class="post-description card-text">Learn how to set up Hydra in Termux for password brute-forcing in pentesting.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post10-content" aria-expanded="false" aria-controls="post10-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Install Hydra in Termux for Password Cracking">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post10-content">
+                          <div class="card card-body">
+                              <h5>Install Hydra in Termux for Password Cracking</h5>
+                              <p>Hydra is a password cracking tool for pentesting. This guide shows you how to install it in Termux.</p>
+                              <h6>Step 1: Install Dependencies</h6>
+                              <ul>
+                                  <li>Type <code>pkg install hydra</code> and press Enter.</li>
+                                  <li>Install required libraries: <code>pkg install libssh</code>.</li>
+                              </ul>
+                              <h6>Step 2: Test Hydra</h6>
+                              <ul>
+                                  <li>Type <code>hydra -l admin -P /path/to/wordlist.txt 192.168.1.1 http-post-form</code>.</li>
+                                  <li>Replace with your target and wordlist.</li>
+                              </ul>
+                              <h6>Step 3: Practice Safely</h6>
+                              <ul>
+                                  <li>Use Hydra only on authorized systems.</li>
+                                  <li>Practice on test environments like DVWA or Metasploitable.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Use a strong wordlist like rockyou.txt for better results!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 11: Set Up VPN in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/vpn-termux.jpg" alt="VPN Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 23, 2025</p>
+                      <h5 class="post-title card-title">Configure a VPN in Termux for Secure Pentesting</h5>
+                      <p class="post-description card-text">Set up a VPN in Termux to protect your identity during pentesting activities.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post11-content" aria-expanded="false" aria-controls="post11-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Configure a VPN in Termux for Secure Pentesting">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post11-content">
+                          <div class="card card-body">
+                              <h5>Configure a VPN in Termux for Secure Pentesting</h5>
+                              <p>A VPN hides your IP address during pentesting. This guide shows you how to set one up in Termux.</p>
+                              <h6>Step 1: Install OpenVPN</h6>
+                              <ul>
+                                  <li>Type <code>pkg install openvpn</code> and press Enter.</li>
+                              </ul>
+                              <h6>Step 2: Get VPN Config</h6>
+                              <ul>
+                                  <li>Download an OpenVPN config file (.ovpn) from your VPN provider.</li>
+                                  <li>Transfer it to Termux using <code>scp</code> or a file manager.</li>
+                              </ul>
+                              <h6>Step 3: Connect to VPN</h6>
+                              <ul>
+                                  <li>Type <code>openvpn /path/to/config.ovpn</code>.</li>
+                                  <li>Enter your VPN credentials when prompted.</li>
+                                  <li>Verify your IP with <code>curl ifconfig.me</code>.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Use trusted VPN providers like NordVPN or ProtonVPN!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 12: Install Wireshark in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/wireshark-termux.jpg" alt="Wireshark Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 24, 2025</p>
+                      <h5 class="post-title card-title">Set Up Wireshark in Termux for Packet Analysis</h5>
+                      <p class="post-description card-text">Learn how to use Wireshark in Termux to analyze network traffic for pentesting.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post12-content" aria-expanded="false" aria-controls="post12-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Set Up Wireshark in Termux for Packet Analysis">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post12-content">
+                          <div class="card card-body">
+                              <h5>Set Up Wireshark in Termux for Packet Analysis</h5>
+                              <p>Wireshark captures and analyzes network packets. This guide helps you set it up in Termux.</p>
+                              <h6>Step 1: Install Dependencies</h6>
+                              <ul>
+                                  <li>Type <code>pkg install tshark</code> (Wireshark’s terminal version).</li>
+                              </ul>
+                              <h6>Step 2: Capture Packets</h6>
+                              <ul>
+                                  <li>Type <code>tshark -i wlan0</code> to capture packets on Wi-Fi.</li>
+                                  <li>Use filters like <code>tshark -f "port 80"</code> for HTTP traffic.</li>
+                              </ul>
+                              <h6>Step 3: Analyze Output</h6>
+                              <ul>
+                                  <li>Save captures with <code>tshark -w capture.pcap</code>.</li>
+                                  <li>Analyze on a PC with Wireshark GUI or in Termux.</li>
+                                  <li>Test on your own network only.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Learn Wireshark filters to focus on specific traffic!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 13: Install Aircrack-ng in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/aircrack-termux.jpg" alt="Aircrack-ng Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 25, 2025</p>
+                      <h5 class="post-title card-title">Install Aircrack-ng in Termux for Wi-Fi Testing</h5>
+                      <p class="post-description card-text">Set up Aircrack-ng in Termux to test Wi-Fi security (requires root).</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post13-content" aria-expanded="false" aria-controls="post13-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Install Aircrack-ng in Termux for Wi-Fi Testing">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post13-content">
+                          <div class="card card-body">
+                              <h5>Install Aircrack-ng in Termux for Wi-Fi Testing</h5>
+                              <p>Aircrack-ng tests Wi-Fi security by capturing packets and cracking passwords. This guide requires a rooted device.</p>
+                              <h6>Step 1: Root Your Device</h6>
+                              <ul>
+                                  <li>Root your Android using tools like Magisk.</li>
+                                  <li>Grant Termux root access.</li>
+                              </ul>
+                              <h6>Step 2: Install Aircrack-ng</h6>
+                              <ul>
+                                  <li>Type <code>pkg install aircrack-ng</code>.</li>
+                                  <li>Install dependencies if prompted.</li>
+                              </ul>
+                              <h6>Step 3: Test a Network</h6>
+                              <ul>
+                                  <li>Type <code>airmon-ng start wlan0</code> to enable monitor mode.</li>
+                                  <li>Use <code>airodump-ng wlan0</code> to scan networks.</li>
+                                  <li>Test only on your own Wi-Fi with permission.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Use a compatible Wi-Fi adapter for better results!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 14: Install John the Ripper in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts")>
+              <div class="post card">
+                  <img src="img/john-termux.jpg" alt="John the Ripper Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 26, 2025</p>
+                      <h5 class="post-title card-title">Set Up John the Ripper in Termux for Password Cracking</h5>
+                      <p class="post-description card-text">Install John the Ripper in Termux to crack passwords during pentesting.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post14-content" aria-expanded="false" aria-controls="post14-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Set Up John the Ripper in Termux for Password Cracking">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post14-content">
+                          <div class="card card-body">
+                              <h5>Set Up John the Ripper in Termux for Password Cracking</h5>
+                              <p>John the Ripper is a password cracker for pentesting. This guide shows you how to install it in Termux.</p>
+                              <h6>Step 1: Install John</h6>
+                              <ul>
+                                  <li>Type <code>pkg install john</code> and press Enter.</li>
+                              </ul>
+                              <h6>Step 2: Prepare a Hash</h6>
+                              <ul>
+                                  <li>Obtain a password hash (e.g., from a test system).</li>
+                                  <li>Save it in a file (e.g., <code>hash.txt</code>).</li>
+                              </ul>
+                              <h6>Step 3: Crack the Password</h6>
+                              <ul>
+                                  <li>Type <code>john hash.txt</code> to start cracking.</li>
+                                  <li>Use <code>john --show hash.txt</code> to view cracked passwords.</li>
+                                  <li>Test only on authorized systems.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Use a custom wordlist for faster cracking!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 15: Install Hashcat in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/hashcat-termux.jpg" alt="Hashcat Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 27, 2025</p>
+                      <h5 class="post-title card-title">Install Hashcat in Termux for Advanced Password Cracking</h5>
+                      <p class="post-description card-text">Set up Hashcat in Termux for high-speed password cracking in pentesting.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post15-content" aria-expanded="false" aria-controls="post15-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Install Hashcat in Termux for Advanced Password Cracking">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post15-content">
+                          <div class="card card-body">
+                              <h5>Install Hashcat in Termux for Advanced Password Cracking</h5>
+                              <p>Hashcat is a powerful password cracker. This guide helps you install it in Termux.</p>
+                              <h6>Step 1: Install Dependencies</h6>
+                              <ul>
+                                  <li>Type <code>pkg install git make clang</code>.</li>
+                              </ul>
+                              <h6>Step 2: Clone Hashcat</h6>
+                              <ul>
+                                  <li>Type <code>git clone https://github.com/hashcat/hashcat.git</code>.</li>
+                                  <li>Navigate to the directory: <code>cd hashcat</code>.</li>
+                              </ul>
+                              <h6>Step 3: Build and Run</h6>
+                              <ul>
+                                  <li>Type <code>make</code> to build Hashcat.</li>
+                                  <li>Run with <code>./hashcat -m 0 hash.txt wordlist.txt</code>.</li>
+                                  <li>Test only on authorized hashes.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Use GPU acceleration if your device supports it!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 16: Install Dirb in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/dirb-termux.jpg" alt="Dirb Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 28, 2025</p>
+                      <h5 class="post-title card-title">Install Dirb in Termux for Web Directory Scanning</h5>
+                      <p class="post-description card-text">Use Dirb in Termux to find hidden directories on websites for pentesting.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post16-content" aria-expanded="false" aria-controls="post16-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Install Dirb in Termux for Web Directory Scanning">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post16-content">
+                          <div class="card card-body">
+                              <h5>Install Dirb in Termux for Web Directory Scanning</h5>
+                              <p>Dirb scans websites for hidden directories and files. This guide shows you how to set it up in Termux.</p>
+                              <h6>Step 1: Install Dirb</h6>
+                              <ul>
+                                  <li>Type <code>pkg install dirb</code> and press Enter.</li>
+                              </ul>
+                              <h6>Step 2: Run Dirb</h6>
+                              <ul>
+                                  <li>Type <code>dirb http://example.com /usr/share/dirb/wordlists/common.txt</code>.</li>
+                                  <li>Review the output for discovered directories.</li>
+                              </ul>
+                              <h6>Step 3: Test Safely</h6>
+                              <ul>
+                                  <li>Test only on authorized websites.</li>
+                                  <li>Use custom wordlists for better results.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Combine Dirb with Burp Suite for comprehensive web testing!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 17: Install Git in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/git-termux.jpg" alt="Git Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 29, 2025</p>
+                      <h5 class="post-title card-title">Install Git in Termux for Version Control in Pentesting</h5>
+                      <p class="post-description card-text">Set up Git in Termux to manage your pentesting scripts and tools.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post17-content" aria-expanded="false" aria-controls="post17-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Install Git in Termux for Version Control in Pentesting">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post17-content">
+                          <div class="card card-body">
+                              <h5>Install Git in Termux for Version Control in Pentesting</h5>
+                              <p>Git helps you manage your pentesting scripts and tools. This guide shows you how to install it in Termux.</p>
+                              <h6>Step 1: Install Git</h6>
+                              <ul>
+                                  <li>Type <code>pkg install git</code> and press Enter.</li>
+                              </ul>
+                              <h6>Step 2: Configure Git</h6>
+                              <ul>
+                                  <li>Type <code>git config --global user.name "Your Name"</code>.</li>
+                                  <li>Type <code>git config --global user.email "your.email@example.com"</code>.</li>
+                              </ul>
+                              <h6>Step 3: Clone a Repository</h6>
+                              <ul>
+                                  <li>Type <code>git clone https://github.com/example/repo.git</code>.</li>
+                                  <li>Navigate to the repo: <code>cd repo</code>.</li>
+                                  <li>Use Git to manage your pentesting scripts.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Push your scripts to GitHub for easy access!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 18: Install Python in Termux -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/python-termux.jpg" alt="Python Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 30, 2025</p>
+                      <h5 class="post-title card-title">Install Python in Termux for Scripting in Pentesting</h5>
+                      <p class="post-description card-text">Set up Python in Termux to write and run pentesting scripts.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post18-content" aria-expanded="false" aria-controls="post18-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Install Python in Termux for Scripting in Pentesting">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post18-content">
+                          <div class="card card-body">
+                              <h5>Install Python in Termux for Scripting in Pentesting</h5>
+                              <p>Python is essential for writing pentesting scripts. This guide shows you how to install it in Termux.</p>
+                              <h6>Step 1: Install Python</h6>
+                              <ul>
+                                  <li>Type <code>pkg install python</code> and press Enter.</li>
+                                  <li>Verify with <code>python --version</code>.</li>
+                              </ul>
+                              <h6>Step 2: Install Pip</h6>
+                              <ul>
+                                  <li>Type <code>pkg install python-pip</code>.</li>
+                                  <li>Use <code>pip install requests</code> to install libraries.</li>
+                              </ul>
+                              <h6>Step 3: Write a Script</h6>
+                              <ul>
+                                  <li>Create a file: <code>nano script.py</code>.</li>
+                                  <li>Write a simple script (e.g., port scanner).</li>
+                                  <li>Run with <code>python script.py</code>.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Explore libraries like Scapy for network pentesting!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 19: Bug Bounty Basics -->
+          <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+              <div class="post card">
+                  <img src="img/bug-bounty.jpg" alt="Bug Bounty Tutorial" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">May 31, 2025</p>
+                      <h5 class="post-title card-title">Bug Bounty Basics: Start Earning with Termux</h5>
+                      <p class="post-description card-text">Learn how to start bug bounty hunting using Termux tools.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post19-content" aria-expanded="false" aria-controls="post19-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Bug Bounty Basics: Start Earning with Termux">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post19-content">
+                          <div class="card card-body">
+                              <h5>Bug Bounty Basics: Start Earning with Termux</h5>
+                              <p>Bug bounty programs pay for finding vulnerabilities. This guide helps you start with Termux.</p>
+                              <h6>Step 1: Join Platforms</h6>
+                              <ul>
+                                  <li>Sign up for HackerOne, Bugcrowd, or Synack.</li>
+                                  <li>Read program rules and scope.</li>
+                              </ul>
+                              <h6>Step 2: Use Termux Tools</h6>
+                              <ul>
+                                  <li>Install Burp Suite, SQLMap, and Dirb in Termux.</li>
+                                  <li>Test web applications for XSS, SQL injection, etc.</li>
+                              </ul>
+                              <h6>Step 3: Report Bugs</h6>
+                              <ul>
+                                  <li>Document vulnerabilities clearly.</li>
+                                  <li>Submit reports with proof of concept.</li>
+                                  <li>Follow program guidelines.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Start with public programs to build experience!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 20: Android Battery Optimization -->
+          <div class="col-md-4 mb-4 post-card" data-category="android-posts">
+              <div class="post card">
+                  <img src="img/battery-optimization.jpg" alt="Battery Optimization" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">June 1, 2025</p>
+                      <h5 class="post-title card-title">Optimize Your Android Battery Life</h5>
+                      <p class="post-description card-text">Extend your Android phone’s battery life with these simple tips.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post20-content" aria-expanded="false" aria-controls="post20-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Optimize Your Android Battery Life">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post20-content">
+                          <div class="card card-body">
+                              <h5>Optimize Your Android Battery Life</h5>
+                              <p>Your Android phone’s battery can drain quickly. These tips help you save power.</p>
+                              <h6>Step 1: Adjust Screen Brightness</h6>
+                              <ul>
+                                  <li>Go to <strong>Settings > Display</strong>.</li>
+                                  <li>Lower brightness or enable adaptive brightness.</li>
+                              </ul>
+                              <h6>Step 2: Turn Off Unused Features</h6>
+                              <ul>
+                                  <li>Disable Wi-Fi, Bluetooth, and GPS when not in use.</li>
+                                  <li>Go to <strong>Settings > Battery > Battery Saver</strong> and enable it.</li>
+                              </ul>
+                              <h6>Step 3: Manage Apps</h6>
+                              <ul>
+                                  <li>Go to <strong>Settings > Apps</strong>.</li>
+                                  <li>Restrict background activity for power-hungry apps.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Use dark mode to save battery on OLED screens!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 21: Clear Android Cache -->
+          <div class="col-md-4 mb-4 post-card" data-category="android-posts">
+              <div class="post card">
+                  <img src="img/cache-clear.jpg" alt="Cache Clear" class="post-image card-img-top">
+                  <div class="card-body">
+                      <p class="post-time text-muted">June 2, 2025</p>
+                      <h5 class="post-title card-title">Clear Cache on Android to Free Space</h5>
+                      <p class="post-description card-text">Free up space and improve performance by clearing cache on your Android.</p>
+                      <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post21-content" aria-expanded="false" aria-controls="post21-content">Read More</button>
+                      <button class="btn btn-info share-btn ms-2" data-post-title="Clear Cache on Android to Free Space">Share</button>
+                      <div class="share-options d-none mt-2">
+                          <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                          <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                          <button class="btn btn-secondary close-share btn-sm">Close</button>
+                      </div>
+                      <div class="collapse mt-3" id="post21-content">
+                          <div class="card card-body">
+                              <h5>Clear Cache on Android to Free Space</h5>
+                              <p>App cache can take up space and slow your phone. This guide shows you how to clear it.</p>
+                              <h6>Step 1: Clear App Cache</h6>
+                              <ul>
+                                  <li>Go to <strong>Settings > Apps</strong>.</li>
+                                  <li>Select an app and tap <strong>Storage > Clear Cache</strong>.</li>
+                              </ul>
+                              <h6>Step 2: Clear System Cache</h6>
+                              <ul>
+                                  <li>Go to <strong>Settings > Storage</strong>.</li>
+                                  <li>Tap <strong>Cached Data</strong> and confirm to clear.</li>
+                              </ul>
+                              <h6>Step 3: Use Cleaning Apps</h6>
+                              <ul>
+                                  <li>Download apps like CCleaner from Google Play.</li>
+                                  <li>Use them to clear cache automatically.</li>
+                              </ul>
+                              <p><strong>Tip:</strong> Clear cache monthly to keep your phone fast!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Post 22: Earn with Freelancing Apps -->
+        <div class="col-md-4 mb-4 post-card" data-category="earning-tricks-tips-posts">
+          <div class="post card">
+              <img src="img/freelancing-apps.jpg" alt="Freelancing Apps" class="post-image card-img-top">
+              <div class="card-body">
+                  <p class="post-time text-muted">June 3, 2025</p>
+                  <h5 class="post-title card-title">Earn Money with Freelancing Apps on Android</h5>
+                  <p class="post-description card-text">Use your Android phone to earn money with freelancing apps like Upwork and Fiverr.</p>
+                  <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post22-content" aria-expanded="false" aria-controls="post22-content">Read More</button>
+                  <button class="btn btn-info share-btn ms-2" data-post-title="Earn Money with Freelancing Apps on Android">Share</button>
+                  <div class="share-options d-none mt-2">
+                      <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                      <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                      <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                      <button class="btn btn-secondary close-share btn-sm">Close</button>
+                  </div>
+                  <div class="collapse mt-3" id="post22-content">
+                      <div class="card card-body">
+                          <h5>Earn Money with Freelancing Apps on Android</h5>
+                          <p>Freelancing apps let you earn money by offering skills like writing, design, or coding from your Android phone. This guide shows you how to start.</p>
+                          <h6>Step 1: Choose a Platform</h6>
+                          <ul>
+                              <li>Download apps like <strong>Upwork</strong>, <strong>Fiverr</strong>, or <strong>Freelancer</strong> from Google Play.</li>
+                              <li>Create a profile highlighting your skills.</li>
+                          </ul>
+                          <h6>Step 2: Find Gigs</h6>
+                          <ul>
+                              <li>Browse projects matching your skills (e.g., logo design, content writing).</li>
+                              <li>Submit proposals with clear details about your expertise.</li>
+                          </ul>
+                          <h6>Step 3: Deliver and Get Paid</h6>
+                          <ul>
+                              <li>Complete tasks within deadlines using your phone or laptop.</li>
+                              <li>Receive payments via PayPal, bank transfer, or other methods.</li>
+                          </ul>
+                          <p><strong>Tip:</strong> Build a strong portfolio to attract more clients!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Post 23: Install OWASP ZAP in Termux -->
+      <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+          <div class="post card">
+              <img src="img/owasp-zap.jpg" alt="OWASP ZAP Tutorial" class="post-image card-img-top">
+              <div class="card-body">
+                  <p class="post-time text-muted">June 4, 2025</p>
+                  <h5 class="post-title card-title">Install OWASP ZAP in Termux for Web Security Testing</h5>
+                  <p class="post-description card-text">Set up OWASP ZAP in Termux to test web applications for vulnerabilities.</p>
+                  <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post23-content" aria-expanded="false" aria-controls="post23-content">Read More</button>
+                  <button class="btn btn-info share-btn ms-2" data-post-title="Install OWASP ZAP in Termux for Web Security Testing">Share</button>
+                  <div class="share-options d-none mt-2">
+                      <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                      <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                      <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                      <button class="btn btn-secondary close-share btn-sm">Close</button>
+                  </div>
+                  <div class="collapse mt-3" id="post23-content">
+                      <div class="card card-body">
+                          <h5>Install OWASP ZAP in Termux for Web Security Testing</h5>
+                          <p>OWASP ZAP is a free tool for finding vulnerabilities in web applications. This guide shows you how to set it up in Termux.</p>
+                          <h6>Step 1: Install Java</h6>
+                          <ul>
+                              <li>Type <code>pkg install openjdk-17</code> and press Enter.</li>
+                              <li>Verify with <code>java -version</code>.</li>
+                          </ul>
+                          <h6>Step 2: Download OWASP ZAP</h6>
+                          <ul>
+                              <li>Visit the official OWASP ZAP website and download the Linux JAR file.</li>
+                              <li>Use <code>wget</code> to download it to Termux or transfer manually.</li>
+                          </ul>
+                          <h6>Step 3: Run OWASP ZAP</h6>
+                          <ul>
+                              <li>Type <code>java -jar zap.jar</code> to start ZAP.</li>
+                              <li>Configure your browser to use ZAP as a proxy (e.g., 127.0.0.1:8080).</li>
+                              <li>Test on legal targets like DVWA or OWASP Juice Shop.</li>
+                          </ul>
+                          <p><strong>Tip:</strong> Use ZAP’s active scan for automated vulnerability detection!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Post 24: Secure Your Android Phone -->
+      <div class="col-md-4 mb-4 post-card" data-category="android-posts">
+          <div class="post card">
+              <img src="img/android-security.jpg" alt="Android Security" class="post-image card-img-top">
+              <div class="card-body">
+                  <p class="post-time text-muted">June 5, 2025</p>
+                  <h5 class="post-title card-title">Secure Your Android Phone from Threats</h5>
+                  <p class="post-description card-text">Protect your Android phone from malware and hackers with these security tips.</p>
+                  <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post24-content" aria-expanded="false" aria-controls="post24-content">Read More</button>
+                  <button class="btn btn-info share-btn ms-2" data-post-title="Secure Your Android Phone from Threats">Share</button>
+                  <div class="share-options d-none mt-2">
+                      <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                      <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                      <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                      <button class="btn btn-secondary close-share btn-sm">Close</button>
+                  </div>
+                  <div class="collapse mt-3" id="post24-content">
+                      <div class="card card-body">
+                          <h5>Secure Your Android Phone from Threats</h5>
+                          <p>Your Android phone stores sensitive data. These steps help you secure it from threats.</p>
+                          <h6>Step 1: Enable Lock Screen</h6>
+                          <ul>
+                              <li>Go to <strong>Settings > Security > Screen Lock</strong>.</li>
+                              <li>Set a PIN, password, or biometric lock.</li>
+                          </ul>
+                          <h6>Step 2: Update Your Phone</h6>
+                          <ul>
+                              <li>Go to <strong>Settings > System > System Update</strong>.</li>
+                              <li>Install the latest security patches.</li>
+                          </ul>
+                          <h6>Step 3: Install Antivirus</h6>
+                          <ul>
+                              <li>Download apps like Avast or Bitdefender from Google Play.</li>
+                              <li>Scan regularly for malware.</li>
+                          </ul>
+                          <p><strong>Tip:</strong> Avoid sideloading apps from unknown sources!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Post 25: Set Up a Pentesting Lab in Termux -->
+      <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+          <div class="post card">
+              <img src="img/pentesting-lab.jpg" alt="Pentesting Lab" class="post-image card-img-top">
+              <div class="card-body">
+                  <p class="post-time text-muted">June 6, 2025</p>
+                  <h5 class="post-title card-title">Build a Pentesting Lab in Termux</h5>
+                  <p class="post-description card-text">Create a safe pentesting lab in Termux to practice cybersecurity skills.</p>
+                  <button class="btn btn-primary read-more" type="button" data-bs-toggle="collapse" data-bs-target="#post25-content" aria-expanded="false" aria-controls="post25-content">Read More</button>
+                  <button class="btn btn-info share-btn ms-2" data-post-title="Build a Pentesting Lab in Termux">Share</button>
+                  <div class="share-options d-none mt-2">
+                      <a href="#" class="share-icon"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                      <a href="#" class="share-icon"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                      <a href="#" class="share-icon"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                      <button class="btn btn-secondary close-share btn-sm">Close</button>
+                  </div>
+                  <div class="collapse mt-3" id="post25-content">
+                      <div class="card card-body">
+                          <h5>Build a Pentesting Lab in Termux</h5>
+                          <p>A pentesting lab lets you practice hacking safely. This guide shows you how to set one up in Termux.</p>
+                          <h6>Step 1: Install Docker</h6>
+                          <ul>
+                              <li>Type <code>pkg install docker</code> (may require root).</li>
+                              <li>Verify with <code>docker --version</code>.</li>
+                          </ul>
+                          <h6>Step 2: Run Vulnerable Containers</h6>
+                          <ul>
+                              <li>Pull a vulnerable image: <code>docker pull vulnerables/web-dvwa</code>.</li>
+                              <li>Run it: <code>docker run -p 80:80 vulnerables/web-dvwa</code>.</li>
+                          </ul>
+                          <h6>Step 3: Test Your Skills</h6>
+                          <ul>
+                              <li>Use tools like Burp Suite or SQLMap to test DVWA.</li>
+                              <li>Practice XSS, SQL injection, and other attacks.</li>
+                              <li>Keep your lab isolated from real networks.</li>
+                          </ul>
+                          <p><strong>Tip:</strong> Explore TryHackMe or Hack The Box for more lab setups!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        </div>
+        </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 TechBit. All Rights Reserved.</p>
+    </footer>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
