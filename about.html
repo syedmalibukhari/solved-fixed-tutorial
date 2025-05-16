@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Problem-Fixed</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Chart.js for Visitor Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- First Row: Logo -->
+        <div class="row justify-content-center align-items-center py-3">
+            <div class="col-12 text-center logo">
+                <a href="index.html"><img src="img/logo.png" alt="Ever True Info">Ever True Info</a>
+            </div>
+        </div>
+    
+        <!-- Second Row: Search Bar and Dark/Light Switch -->
+        <div class="row justify-content-between align-items-center py-3 mx-4">
+            <div class="col-8 text-center searchbar">
+                <form class="d-flex" action="search.html" method="GET">
+                    <input class="form-control" type="search" placeholder="Search..." aria-label="Search" name="query">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="col-4 text-end dark-icon">
+                <button type="button" class="btn btn-light" id="themeToggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Links -->
+    <div class="row justify-content-center">
+        <div class="navbar col-12 text-center">
+            <ul class="d-flex justify-content-center">
+                <li class="mx-3" style="--i: #ff55b2; --j: rgb(111, 12, 90);">
+                    <span class="icon">
+                        <i class="fa-solid fa-house-chimney"></i></span>
+                    <span class="text"><a href="index.html">Home</a></span>
+                </li>
+                <li class="mx-3 active" style="--i: #ff55b2; --j: rgb(111, 12, 90);">
+                    <span class="icon">
+                        <i class="fa-solid fa-person"></i></span>
+                    <span class="text"><a href="about.html">About</a></span>
+                </li>
+                <li class="mx-3" style="--i: #ff55b2; --j: rgb(111, 12, 90);">
+                    <span class="icon">
+                        <i class="fa-brands fa-rocketchat"></i></span>
+                    <span class="text"><a href="contact.html">Contact</a></span>
+                </li>
+            </ul>
+        </div>
+        <hr class="navbar-hr">
+    </div>
+
+    <!-- About Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">About TechBit</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/hero.jpg" class="img-fluid rounded" alt="About Image">
+            </div>
+            <div class="col-md-6">
+                <p>TechBit is your one-stop platform for the latest tech news, tutorials, and reviews. We aim to simplify technology for everyone...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 TechBit. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

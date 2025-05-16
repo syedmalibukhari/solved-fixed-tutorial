@@ -1,0 +1,19 @@
+<div class="post-card" data-category="android-posts">
+    <div class="post card">
+        <img src="img/android-security.jpg" class="post-image card-img-top">
+        <div class="card-body">
+            <p class="post-time">June 5, 2025</p>
+            <h5 class="post-title card-title">Secure Your Android Phone from Threats</h5>
+            <p class="post-description card-text">Protect your Android phone from malware...</p>
+            <button class="btn btn-primary read-more" data-bs-toggle="collapse" data-bs-target="#post24-content">Read More</button>
+            <button class="btn btn-info share-btn" data-post-title="Secure Your Android Phone from Threats">Share</button>
+            <div class="share-options">
+                <a href="#" class="share-icon twitter-share"><img src="assets/social-icons/twitter.svg" alt="Twitter"></a>
+                <a href="#" class="share-icon facebook-share"><img src="assets/social-icons/facebook.svg" alt="Facebook"></a>
+                <a href="#" class="share-icon linkedin-share"><img src="assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                <button class="btn btn-secondary close-share btn-sm">Close</button>
+            </div>
+            <div class="collapse" id="post24-content">...</div>
+        </div>
+    </div>
+</div>
